@@ -138,11 +138,10 @@
     width: 91%;
     margin: 0 auto;
 }
-.strategy.cloudMonitoringStrategyWrapper {
+.cloudMonitoringStrategyWrapper {
     background-image: url("/images/cloudMigrationBackground.png");
 }
 .strategy {
-    background-image: url("/images/cloudMigrationBackground.png");
     background-size: cover;
     width: 100%;
     float: left;
@@ -170,7 +169,6 @@
     display: table;
     float: left;
     margin-top: 30px;
-    padding: 10px 0 35px;
 }
 .sectionWrapper.split-section .leftside-data, .split-section .leftside-data {
     padding-right: 10%;
@@ -211,7 +209,7 @@
 .cloudStrategyContainer .listText li {
     padding-bottom: 10px;
 }
-ul.listTextCommon li {
+.listTextCommon li {
     color: #da3a36;
     clear: left;
 }
@@ -466,7 +464,6 @@ ul.listTextCommon li {
     float: none;
     background: #fff;
     border: 1px solid #ededed;
-    padding: 30px;
     box-sizing: border-box;
     border-radius: 10px;
 }
