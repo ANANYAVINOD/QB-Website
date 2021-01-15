@@ -1,0 +1,57 @@
+html,body {
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden; 
+}
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+img {
+    max-width: 100%;
+    border: 0;
+    height: auto;
+    width: auto;
+}
+ul {
+    list-style: none;
+    list-style-type: none;
+}
+li {
+    display: list-item;
+    text-align: -webkit-match-parent;
+}
+a {
+    text-decoration: none;
+    outline: 0;
+    cursor: pointer;
+}
+h1 {
+    font-family: 'Nunito',sans-serif;
+    font-weight: 400;
+    font-size: 36px;
+    text-align: center;
+    color: #da3a36;
+    text-transform: uppercase;
+}
+h2 {
+    font-family: 'Nunito',sans-serif;
+    font-weight: 400;
+    font-size: 30px;
+    color: #262626;
+    line-height: normal;
+}
+h3 {
+    font-family: 'Nunito',sans-serif;
+    font-weight: 400;
+    font-size: 26px;
+}
+p{
+    font-family: 'Nunito',sans-serif;
+    font-size: 17px;
+    line-height: 30px;
+    font-weight: 400;
+    background-color: transparent;
+    padding: 0;
+    color: #262626;
+}

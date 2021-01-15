@@ -1,0 +1,702 @@
+#header {
+    background: rgba(255,255,255,0.9);
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 100;
+}
+.headerWrapper {
+    display: table;
+    margin: 0 auto;
+    width: 91%;
+    max-width: 1500px;
+    padding: 10px 0;
+}
+.headerWrapper .logo {
+    display: table-cell;
+    vertical-align: middle;
+}
+.navigation {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+.navigation nav {
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 50px;
+}
+.inquiryButton {
+    padding: 0;
+}
+.buttonInner {
+    max-width: 200px;
+    border: 2px solid #da3a36;
+    border-radius: 50px;
+    padding: 15px 25px;
+    color: #da3a36;
+    -webkit-transition: color .1s cubic-bezier(0.16,0.08,0.355,1),background .1s cubic-bezier(0.16,0.08,0.355,1);
+    transition: color .1s cubic-bezier(0.16,0.08,0.355,1),background .1s cubic-bezier(0.16,0.08,0.355,1);
+    display: inline-block;
+    cursor: pointer;
+    outline: 0;
+    vertical-align: middle;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    -moz-transition: color .1s cubic-bezier(0.16,0.08,0.355,1),background .1s cubic-bezier(0.16,0.08,0.355,1);
+    -ms-transition: color .1s cubic-bezier(0.16,0.08,0.355,1),background .1s cubic-bezier(0.16,0.08,0.355,1);
+    -o-transition: color .1s cubic-bezier(0.16,0.08,0.355,1),background .1s cubic-bezier(0.16,0.08,0.355,1);
+    box-sizing: border-box;
+    width: 100%;
+    font-family: 'Nunito',sans-serif;
+}
+
+.buttonText:hover{
+    padding-right: 5px;
+    padding-left:3px;
+}
+.buttonText:after {
+    content: '»';
+    position: absolute;
+    opacity: 0;  
+    top: 14px;
+    right: -20px;
+    transition: 0.5s;
+}
+.buttonText:hover:after {
+    opacity: 1;
+    right: 10px;
+}
+  
+.buttonText {
+    display: block;
+    left: 100%;
+    top: -2px;
+}
+.searchIcon::before {
+    position: absolute;
+    content: "\f002";
+    color: #000; 
+    font-size: 22px;
+    font-family: 'FontAwesome';
+    margin-top: -10px;
+    cursor: pointer;
+}
+.menuIcon::before {
+    content: "\f0c9";
+    position: absolute;
+    color: #000; 
+    font-size: 22px;
+    font-family: 'FontAwesome';
+    margin-top: -10px;
+    cursor: pointer;
+}
+#breadcrumb {
+    width: 100%;
+    font-family: 'Nunito',sans-serif;
+    font-weight: 400;
+    display: block;
+    margin-top: 70px;
+    padding: 20px 0 0;
+}
+#breadcrumbInner {
+    display: block;
+    margin: 0 auto;
+    width: 91%;
+    max-width: 1500px;
+}
+#breadcrumb span {
+    color: #ed212d;
+    font-size: 11px;
+}
+#breadcrumb span a {
+    color: #393939;
+    font-weight: 400;
+    padding-right: 10px;
+    font-size: 11px;
+}
+#breadcrumb .breadcrumbSlash {
+    color: #393939;
+    padding-right: 8px;
+    font-size: 14px;
+}
+.sectionWrapper {
+    width: 75%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.migrationServiceFirstWrapper {
+    padding-bottom: 60px;
+}
+.sectionOuterWrapper {
+    width: 91%;
+    margin: 0 auto;
+    max-width: 1500px;
+}
+.sectionInnerWrapper {
+    width: 91%;
+    margin: 0 auto;
+}
+.strategy.cloudMonitoringStrategyWrapper {
+    background-image: url("/images/cloudMigrationBackground.png");
+}
+.strategy {
+    background-image: url("/images/cloudMigrationBackground.png");
+    background-size: cover;
+    width: 100%;
+    float: left;
+    line-height: 24px;
+    border: none;
+    background-position: top;
+}
+.cloudStrategyContainer {
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+.cloudMonitoringStrategyWrapper .sectionWrapper {
+    display: flex;
+}
+.cloudMonitoringStrategyWrapper .sectionOuterWrapper {
+    display: inline-block;
+    clear: both;
+    border-radius: 10px;
+    background-color: #fff;
+}
+.cloudStrategyContentFirst {
+    padding-bottom: 40px;
+}
+.split-section {
+    display: table;
+    float: left;
+    margin-top: 30px;
+    padding: 10px 0 35px;
+}
+.sectionWrapper.split-section .leftside-data, .split-section .leftside-data {
+    padding-right: 10%;
+    box-sizing: border-box;
+}
+.leftside-data {
+    width: 46%;
+    vertical-align: middle;
+    display: table-cell;
+    padding-right: 30px;
+}
+.strategy .cloudConsultSubHead {
+    padding-bottom: 20px;
+    text-align: left;
+}
+.strategy h2 {
+    text-align: center;
+    padding-bottom: 30px;
+}
+.strategy.cloudStrategyContainer .cloudConsultSubHead span {
+    display: block;
+}
+.headingRedSplit, .headingRed {
+    color: #da3a36;
+}
+.strategy .listText {
+    padding-top: 30px;
+    padding-bottom: 0;
+}
+.listTextCommon {
+    list-style-type: disc;
+    width: 91%;
+}
+.listText {
+    width: 100%;
+    margin: 0 auto;
+}
+.cloudStrategyContainer .listText li {
+    padding-bottom: 10px;
+}
+ul.listTextCommon li {
+    color: #da3a36;
+    clear: left;
+}
+.listText li {
+    font-family: 'Nunito',sans-serif;
+    font-weight: 400;
+    color: #262626;
+    line-height: 30px;
+    padding-bottom: 20px;
+    font-size: 17px;
+}
+.listTextCommon {
+    list-style-type: disc;
+    width: 91%;
+}
+.listTextCommon li span {
+    color: #262626;
+}
+.migrate-heading {
+    font-weight: bolder;
+    display: block;
+    padding-bottom: 3px;
+}
+.write-comments.buttonHover {
+    float: none;
+    padding-bottom: 0;
+}
+.write-comments {
+    text-align: center;
+    padding-bottom: 60px;
+    width: 100%;
+    float: left;
+}
+.write-comments.buttonHover button {
+    padding: 10px 20px;
+    width: auto;
+    text-transform: none;
+}
+.leftside-data .write-comments button {
+    font-size: 12px;
+    color: #fff;
+    border-color: #2d2d2d;
+    font-family: 'Nunito',sans-serif;
+}
+.buttonHover .InquiryBtn, .buttonHover button, .decideMigration .InquiryBtn {
+    border-radius: 40px;
+    transform: scale(1);
+    transition: .15s all ease;
+}
+.write-comments button {
+    width: 180px;
+    margin: 20px auto;
+    font-size: 14px;
+}
+.InquiryBtn {
+    font-size: 12px;
+    padding: 11px 0;
+    width: 100%;
+    display: inline-block;
+}
+.submitBtn, .InquiryBtn {
+    cursor: pointer;
+    font-family: 'OpenSansbold';
+    background-color: #da3a36;
+    color: #fff;
+    border: 0;
+    padding: 5px 20px;
+    text-transform: capitalize;
+    font-size: 14px;
+    border-radius: 5px;
+}
+.rightside-data {
+    width: 46%;
+    border-left: 1px solid #dfdfdf;
+    display: table-cell;
+    padding-left: 40px;
+    vertical-align: middle;
+}
+
+.sectionWrapper.split-section figure, .cloudStrategyContentFirst .split-section figure, .docker .serverlessEconomic>div:first-child img {
+    text-align: center;
+    padding-bottom: 20px;
+}
+.strategy .rightside-data h2 {
+    padding-bottom: 20px;
+}
+.cloudStrategyContentFirst .rightside-data p {
+    text-align: center;
+}
+.migrationContent {
+    margin-top: 30px;
+}
+.pageUrlLink {
+    color: #da3a36;
+    text-decoration: underline;
+    font-weight: bold;
+}
+.migrationsStagesWrapper {
+    background-image: url("/images/migrationStageBg.png");
+    padding: 60px 0;
+    background-size: 100%;
+    min-height: 450px;
+    display: inline-block;
+    width: 100%;
+}
+.cloudMigrationInteractiveWrapper {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 60px 0;
+}
+.innerSubHead, .innerSubHeading {
+    padding-bottom: 20px;
+    text-align: center;
+}
+.stagesNumberedSection {
+    border-top: 1px solid #dfdfdf;
+    margin-top: 100px;
+    display: flex;
+}
+.stagesNumberedSection>span {
+    position: relative;
+    flex: 1;
+}
+.stagesNumberedSection .active:before {
+    content: "";
+    bottom: -65px;
+    background-color: transparent;
+    right: 65px;
+}
+.stagesNumberedSection>span:before {
+    content: "";
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    display: inline-block;
+    position: absolute;
+    bottom: -10px;
+    right: 0;
+}
+.discovery:before {
+    background-color: #f16051;
+}
+.stagesNumberedContent.active span {
+    top: 80px;
+    font-size: 26px;
+    right: -60px;
+}
+.stagesNumberedContent span {
+    font-size: 20px;
+    position: absolute;
+    top: 20px;
+    right: -35px;
+    font-family: 'Nunito',sans-serif;
+}
+.stagesContents:not(:first-child){
+    opacity: 0;
+    height: 0;
+    padding: 0;
+}
+.stagesNumberedSection .discovery.active:after {
+    content: url("/images/one.svg");
+}
+.stagesNumberedSection .active:after {
+    top: -70px;
+}
+.stagesNumberedSection>span:after {
+    content: "";
+    position: absolute;
+    top: -100px;
+    right: -65px;
+    animation: fadein 1s;
+    -moz-animation: fadein 1s;
+    -webkit-animation: fadein 1s;
+    -o-animation: fadein 1s;
+    transition: 1s top ease;
+}
+.decision:before {
+    background-color: #4fbf9e;
+}
+.stagesNumberedContent.decision span {
+    right: -27px;
+}
+.stagesNumberedSection .decision.active:after {
+    content: url("/images/two.svg");
+}
+.transition:before {
+    background-color: #3aa2db;
+}
+.stagesNumberedSection .transition.active:after {
+    content: url("/images/three.svg");
+}
+.cloud:before {
+    background-color: #f9bf5e;
+}
+.stagesNumberedContent.cloud span {
+    right: -15px;
+}
+.stagesNumberedContent.cloud.active span {
+    right: -30px;
+}
+.stagesNumberedSection .cloud.active:after {
+    content: url("/images/four.svg");
+}
+.stagesNumberedSection .active:after {
+    top: -70px;
+}
+.stagesContentWrapper {
+    margin-top: 10px;
+}
+.stagesContents {
+    display: flex;
+    width: 70%;
+    margin: 0 auto;
+    animation: fadein 1s;
+    -moz-animation: fadein 1s;
+    -webkit-animation: fadein 1s;
+    -o-animation: fadein 1s;
+    transition: 1s bottom ease;
+    position: relative;
+    height: auto;
+    padding: 150px 0 0 0;
+    opacity: 0;
+    bottom: -40px;
+    height: 0;
+}
+.stagesContents>div {
+    flex: 1;
+}
+.stagesContents p:first-child {
+    font-weight: 800;
+    font-size: 17px;
+}
+.stagesContents>div:nth-child(2) {
+    padding-left: 50px;
+    border-left: 1px solid #dfdfdf;
+}
+#decision>div:nth-child(1) {
+    padding-right: 50px;
+}
+.stagesContents p {
+    font-size: 16px;
+}
+.migrationExecuteWrapper {
+    padding: 60px 0;
+}
+.cloudMigrationSteps .bigDataWrapper.split-section {
+    border-radius: 4px;
+    padding: 0;
+    display: table;
+}
+.sectionWrapper.split-section, .cloudStrategyContentFirst.split-section {
+    float: none;
+    background: #fff;
+    border: 1px solid #ededed;
+    padding: 30px;
+    box-sizing: border-box;
+    border-radius: 10px;
+}
+.cloudMigrationSteps .split-section>div:first-child {
+    display: table-cell;
+}
+.cloudMigrationSteps .split-section>div:first-child figure:hover, .cloudMigrationSteps .split-section>div:first-child figure.active {
+    margin-left: -10px !important;
+    transition: all 0.1s ease !important;
+    cursor: pointer;
+}
+.cloudMigrationSteps .split-section>div:first-child figure:first-child {
+    background-color: #2676ac;
+    border-top-left-radius: 4px;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+.cloudMigrationSteps .split-section>div figure {
+    padding-top: 24px;
+    padding-bottom: 20px;
+    position: relative;
+}
+.cloudMigrationSteps .split-section>div:first-child figure:hover img, .cloudMigrationSteps .split-section>div:first-child figure.active img {
+    transition: all 0.3s ease !important;
+    transform: scale(1.1) translateY(-5%) !important;
+}
+.cloudMigrationSteps .split-section>div:first-child img {
+    transition: all 0.3s ease !important;
+}
+.cloudMigrationSteps .split-section>div:first-child figure:nth-child(2) {
+    background-color: #30c4d2;
+    margin: 0;
+    margin-right: 40px;
+}
+.cloudMigrationSteps .split-section>div:first-child figure:nth-child(3) {
+    background-color: #44a599;
+    margin: 0;
+    margin-right: 40px;
+}
+.cloudMigrationSteps .split-section>div:first-child figure:nth-child(4) {
+    background-color: #49d2ae;
+    margin: 0;
+    margin-right: 40px;
+}
+.cloudMigrationSteps .split-section>div:first-child figure:nth-child(5) {
+    background-color: #1d9eb8;
+    border-bottom-left-radius: 4px;
+    margin: 0;
+    margin-right: 40px;
+}
+.cloudMigrationSteps .split-section>div:nth-child(2) {
+    display: table-cell;
+    vertical-align: middle;
+    padding: 0 5%;
+}
+.cloudMigartionStepContent img, .cloudMigartionStepContent h3 {
+    display: inline-block;
+    vertical-align: middle;
+}
+.cloudMigartionStepContent h3 {
+    padding-left: 25px;
+    font-size: 24px;
+}
+.cloudMigartionStepContent .listText.listTextCommon {
+    width: 95%;
+}
+.strategy .listText {
+    padding-top: 30px;
+    padding-bottom: 0;
+}
+.cloudStrategyContainer .listText li {
+    padding-bottom: 10px;
+}
+.cloudMigartionStepContent .listCont {
+    font-size: 19px;
+    color: #000;
+}
+.cloudStrategyContainer .listCont {
+    display: inline;
+}
+
+.cloudMigartionStepContent {
+    animation: fadein 1s;
+    -moz-animation: fadein 1s;
+    -webkit-animation: fadein 1s;
+    -o-animation: fadein 1s;
+}
+.dataResourceWrapper {
+    padding-top: 40px;
+    padding-bottom: 120px;
+}
+.resourceMainWrapper {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding-top: 30px;
+    width: 91%;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1500px;
+}
+.resourceThumnail:not(:last-child) {
+    margin-right: 40px;
+}
+.resourceThumnail {
+    flex: 1;
+    width: 40%;
+    max-width: 370px;
+    transition: all 1s ease;
+    border: 2px solid transparent;
+}
+.resourceLink {
+    position: relative;
+    top: 0;
+    width: 100%;
+    max-width: 370px;
+    height: 270px;
+    display: inline-block;
+    transition: all 1s ease;
+    border-radius: 4px;
+    -webkit-box-shadow: 0 30px 40px -16px rgba(0, 0, 0, .35);
+    -moz-box-shadow: 0 30px 40px -16px rgba(0, 0, 0, .35);
+    box-shadow: 0 30px 40px -16px rgba(0, 0, 0, .35);
+    background-position: top;
+    background-size: cover;
+    padding: 40px 0;
+}
+.sharepointMigrationBg {
+    background-image: url("/images/thumvnailSample.jpg");
+}
+.thumbnailText {
+    position: absolute;
+    padding-left: 20px;
+    padding-right: 20px;
+    text-align: left;
+    bottom: 20px;
+    transition: all 1s ease;
+    -webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -ms-transition: all 1s ease;
+    -o-transition: all 1s ease;
+    z-index: 1;
+}
+.thumbnailTextHead {
+    font-size: 23px;
+}
+.resourceMainWrapper .xtraContent, .thumbnailTextHead {
+    font-family: 'Nunito',sans-serif;
+    color: #fff;
+}
+.thumbnailText .xtraContent {
+    display: none;
+}
+.thumbnailText .xtraContent span {
+    font-size: 22px;
+    vertical-align: middle;
+    font-family: 'Nunito',sans-serif;
+    font-weight: 800;
+    position: relative;
+    top: -2px;
+    left: 5px;
+}
+.resourceLink:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: black;
+    opacity: .5;
+    border-radius: 4px;
+}
+.AWSCloudImg {
+    background-image: url("/images/chillifactory.jpg");
+}
+.sharepointFeatured {
+    background: url("/images/sharePoint.png")no-repeat -100px -1px;;
+    background-size: 486px;
+}
+.resourceLink:hover .xtraContent {
+    display: block;
+}
+.resourceLink:hover {
+    transform: translateY(-30px);
+    transition: all 0.5s linear;
+}
+.footerWrap {
+    background-image: linear-gradient(to right, rgba(255,0,0,0), rgb(248, 222, 222));
+}
+.footerContent {
+   /* box-shadow: 10px 30px 40px -16px rgba(0.35, 0.35, 0.35, 0.35);*/
+    box-shadow: 0 0 10px -5px #000000;
+    border: 2px solid transparent;
+    width: 350px;
+    padding: 25px;
+    background-color: #ffffff;
+    position: relative;
+    top: -30px;
+}
+.footerContent p {
+    font-size: 20px;
+    font-weight: 800;
+}
+.footerContent .buttonInner {
+    max-width: 150px;
+    font-size: 15px;
+    padding: 10px 20px;
+}
+.footerContent .buttonText:after {
+    top: 10px;
+}
+.footerContentWrap {
+    display: flex;
+    justify-content: space-between;
+    width: 85%;
+    margin: 0 auto;
+}
+.footerAddress p:first-child {
+    font-weight: 800;
+}
+.footerAddress .buttonInner {
+    border: none;
+    text-align: left;
+    padding: 0;
+}
+.footerCopyright p{
+    color: #4d4d4d;
+    font-size: 12px;
+    padding: 0;
+    font-weight: 300;
+    text-align: center;
+}
