@@ -33,7 +33,7 @@
     max-width: 200px;
     border: 2px solid #da3a36;
     border-radius: 50px;
-    padding: 15px 25px;
+    padding: 5px 25px;
     color: #da3a36;
     -webkit-transition: color .1s cubic-bezier(0.16,0.08,0.355,1),background .1s cubic-bezier(0.16,0.08,0.355,1);
     transition: color .1s cubic-bezier(0.16,0.08,0.355,1),background .1s cubic-bezier(0.16,0.08,0.355,1);
@@ -50,6 +50,7 @@
     box-sizing: border-box;
     width: 100%;
     font-family: 'Nunito',sans-serif;
+    font-size: 14px;
 }
 
 .buttonText:hover{
@@ -60,7 +61,7 @@
     content: '»';
     position: absolute;
     opacity: 0;  
-    top: 14px;
+    top: 5px;
     right: -20px;
     transition: 0.5s;
 }
@@ -551,8 +552,58 @@
     -webkit-animation: fadein 1s;
     -o-animation: fadein 1s;
 }
+.cloudServiceImagesWrapper {
+    display: block;
+    padding: 60px 0;
+    clear: both;
+}
+.cloudServiceImages {
+    display: flex;
+    text-align: center;
+    align-items: center;
+}
+.cloudServiceImages p {
+    flex: 1;
+}
+.cloudServiceImages span {
+    background-image: url("/images/cloudMigrationSprite.png");
+    content: "";
+    display: inline-block;
+    height: 60px;
+    width: 112px;
+}
+.cloudServiceImages p:first-child span {
+    background-position: -4px 60px;
+    width: 160px;
+}
+.cloudServiceImages p:first-child span:hover {
+    background-position: -4px -16px;
+}
+.cloudServiceImages p:nth-child(2) span {
+    background-position: -172px 74px;
+    height: 70px;
+    width: 138px;
+}
+.cloudServiceImages p:nth-child(2) span:hover {
+    background-position: -172px 3px;
+}
+.cloudServiceImages p:nth-child(3) span {
+    background-position: -330px 84px;
+    height: 82px;
+    width: 90px;
+}
+.cloudServiceImages p:nth-child(3) span:hover {
+    background-position: -330px 170px;
+}
+.cloudServiceImages p:nth-child(4) span {
+    background-position: -438px 72px;
+    height: 75px;
+    width: 160px;
+}
+.cloudServiceImages p:nth-child(4) span:hover {
+    background-position: -438px 172px;
+}
 .dataResourceWrapper {
-    padding-top: 40px;
     padding-bottom: 120px;
 }
 .resourceMainWrapper {
@@ -655,7 +706,6 @@
     background-image: linear-gradient(to right, rgba(255,0,0,0), rgb(248, 222, 222));
 }
 .footerContent {
-   /* box-shadow: 10px 30px 40px -16px rgba(0.35, 0.35, 0.35, 0.35);*/
     box-shadow: 0 0 10px -5px #000000;
     border: 2px solid transparent;
     width: 350px;
@@ -663,6 +713,7 @@
     background-color: #ffffff;
     position: relative;
     top: -30px;
+    height: 150px;
 }
 .footerContent p {
     font-size: 20px;
@@ -682,13 +733,24 @@
     width: 85%;
     margin: 0 auto;
 }
+.footerAddress {
+    padding: 35px 15px;
+}
 .footerAddress p:first-child {
     font-weight: 800;
 }
 .footerAddress .buttonInner {
     border: none;
     text-align: left;
-    padding: 0;
+    padding: 3px;
+    max-width: 150px;
+}
+.footerAddress .buttonText:after {
+    top: 2px;
+}
+.footerAddress p {
+    font-size: 14px;
+    line-height: 25px;
 }
 .footerCopyright p{
     color: #4d4d4d;
@@ -696,4 +758,32 @@
     padding: 0;
     font-weight: 300;
     text-align: center;
+}
+.footerIcons a {
+    font-family: 'FontAwesome';
+    padding: 3%;
+    display: inline-block;
+    font-size: 12px;
+    color: #F9E0E0;
+    flex: 1;
+    border: 1px solid #F9E0E0;
+    border-radius: 50%;
+    background-color: #262626;
+    margin-right: 15px;
+    margin-top: 10px;
+}
+.facebook::after {
+    content: "\f09a";
+}
+.twitter::after {
+    content: "\f099";
+}
+.linkedin::after {
+    content: "\f0e1";
+}
+.youtube::after {
+    content: "\f16a";
+}
+.slideshare::after {
+    content: "\f1e7";
 }

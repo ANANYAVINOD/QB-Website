@@ -40,6 +40,7 @@ h2 {
     font-size: 30px;
     color: #262626;
     line-height: normal;
+    margin-bottom: 0;
 }
 h3 {
     font-family: 'Nunito',sans-serif;
@@ -54,4 +55,5 @@ p{
     background-color: transparent;
     padding: 0;
     color: #262626;
+    margin-top: 0;
 }
