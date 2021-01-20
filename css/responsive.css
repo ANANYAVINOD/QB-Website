@@ -1,0 +1,190 @@
+@media (max-width:1025px) {
+    .navigation .navButton {
+        display: none;
+    }
+    .navigation .envelopeWrap {
+        display: inline-block;
+    }
+}
+@media (max-width: 1024px) and (min-width: 768px) {
+    .sectionWrapper {
+        width: 88%;
+    }
+}
+@media (max-width: 768px) {
+    .sectionWrapper {
+        width: 88%;
+    }
+    .migrationServiceFirstWrapper {
+        border-bottom: 1px solid #dfdfdf;
+    }
+    .sectionOuterWrapper {
+        width: 100%;
+    }
+    .split-section .leftside-data {
+        padding-right: 0;
+        padding-bottom: 20px;
+    }
+    .leftside-data, .rightside-data {
+        width: 100%;
+        display: block;
+        border: none;
+        margin-bottom: 20px;
+        border-bottom: 1px solid #dfdfdf;
+        margin: 0 auto;
+    }
+    .rightside-data {
+        padding: 20px 0;
+    }
+    .cloudStrategyContentFirst .rightside-data p {
+        text-align: left;
+    }
+    .cloudStrategyContentFirst figure {
+        display: none;
+    }
+    .strategy .cloudConsultSubHead {
+        text-align: center;
+    }
+    .cloudStrategyContainer {
+        padding-top: 40px;
+    }
+    .cloudStrategyContainer.strategy,
+    .migrationsStagesWrapper {
+        background-color: transparent;
+        background: none;
+    } 
+    .InquiryBtn {
+        display: none;
+    }
+    .strategy .listText {
+        padding-bottom: 10px;
+    }
+    .awsDropdown {
+        display: block;
+    }
+    .migrationsStagesWrapper,
+    .cloudMigrationStrategyContainer {
+        display: none;
+    }
+    .collapse-content {
+        width: 100%;
+        margin: 0 auto;
+    }
+    .decidingMobilewrapper .collapse-content, .compareStrategies .collapse-content, .cloudMigrationServiceWrapper div {
+        margin-top: 20px;
+    }
+    .desktop-view-content, #collapsable-wrapper .desktop-view-content, .collapsable-container.collapseWrapper .desktop-view-content {
+        width: 100%;
+        padding: 0 !important;
+        position: relative;
+        z-index: 1;
+    }
+    .desktop-view-content {
+        border-bottom: 1px solid #ebebeb;
+    }
+    .machineLearningContent .mobile-collapse-content {
+        display: table;
+        align-items: center;
+        width: 100%;
+    }
+    .mobile-collapse-content {
+        font-size: 28px;
+        padding: 20px 0;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+    }
+    .awsDropdown .desktop-view-content h3 {
+        display: table-cell;
+        vertical-align: middle;
+        text-align: left;
+        width: 90%;
+        padding: 0;
+    }
+    .mobile-collapse-content .mobile-collapse-contenting {
+        font-size: 24px;
+    }
+    .awsDropdown .desktop-view-content .iconArrow {
+        display: table-cell;
+        vertical-align: middle;
+        padding-left: 10px;
+        box-sizing: border-box;
+        font-size: 24px;
+    }
+    .machineLearningContentWrapper .icon-Close:before {
+        content: "\f107";
+        font-family: "FontAwesome";
+        border-radius: 50%;
+        border: 2px solid black;
+        padding: 0 4px;
+    }
+    .headingRedSplit {
+        display: block;
+    }
+    .migrationExecuteWrapper {
+        border-bottom: 1px solid #e5e5e5;
+        padding-top: 0;
+    }
+    .cloudServiceImages {
+        display: block;
+    }
+    .cloudServiceImages p:not(:last-child) {
+        padding-bottom: 30px;
+    }
+    .cloudServiceImages p:first-child span {
+        background-position: -4px -16px;
+    }
+    .cloudServiceImages p:nth-child(2) span {
+        background-position: -172px 3px;
+    }
+    .cloudServiceImages p:nth-child(3) span {
+        background-position: -330px 170px;
+    }
+    .cloudServiceImages p:nth-child(4) span {
+        background-position: -438px 172px;
+    }
+    .resourceMainWrapper {
+        display: block;
+    }
+    .resourceThumnail {
+        width: 100%;
+        margin: 0 auto;
+    }
+    .resourceThumnail:not(:last-child) {
+        margin-right: auto;
+        margin-bottom: 40px;
+    }
+    .thumbnailText {
+        text-align: center;
+        top: 30px;
+        width: inherit;
+        box-sizing: border-box;
+    }
+    .thumbnailTextHead {
+        text-align: left;
+    }
+    .resourceMainWrapper .xtraContent {
+        display: inline;
+        position: relative;
+        top: 100px;
+        border: 1px solid #fff;
+        border-radius: 4px;
+        padding: 10px;
+        width: 140px;
+        color: #fff;
+    }
+    .thumbnailText .xtraContent span {
+        display: none;
+    }
+    .footerContentWrap {
+        display: block;
+        padding-top: 30px;
+    }
+    .footerContent {
+        top: 0;
+        height: auto;
+        width: auto;
+        padding-right: 90px;
+    }
+}
+
