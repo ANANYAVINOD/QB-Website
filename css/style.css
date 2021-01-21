@@ -562,7 +562,6 @@
 .cloudStrategyContainer .listCont {
     display: inline;
 }
-
 .cloudMigartionStepContent {
     animation: fadein 1s;
     -moz-animation: fadein 1s;
@@ -806,4 +805,14 @@
 }
 .awsDropdown {
     display: none;
+}
+.migrationMobileWrapper .collapse p:first-child {
+    font-weight: 800;
+}
+#decisionCollapse div:nth-child(2)  {
+    border-top: 1px solid #e5e5e5;
+    padding-top: 30px;
+}
+#decisionCollapse div {
+    padding-bottom: 20px;
 }

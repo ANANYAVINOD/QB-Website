@@ -9,6 +9,10 @@
     <link rel="stylesheet" href="css/common.css">
     <link rel="stylesheet" href="css/responsive.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </head>
 
 <body>
@@ -174,27 +178,57 @@
 
             <section class="awsDropdown sectionWrapper decidingMobilewrapper commonBottomSection">
                 <h2 class="innerSubHeading"><span class="headingRed headingRedSplit">Stages in </span>Cloud Migration</h2>
-                <div class="collapse-content machineLearningContentWrapper crossPLinks">
+                <div class="collapse-content machineLearningContentWrapper migrationMobileWrapper">
                     <div class="desktop-view-content machineLearningContent">
                         <div class="mobile-collapse-content">
-                            <h3 class="mobile-collapse-contenting">Discovery</h3><span class="iconArrow icon-Close"></span>
-                        </div>   
+                            <h3 class="mobile-collapse-contenting">Discovery</h3><span class="iconArrow icon-Close" data-toggle="collapse" data-target="#discoveryCollapse"></span>
+                        </div>  
+                        <div id="discoveryCollapse" class="collapse">
+                            <p>Inventory of existing infrastructure</p>
+                            <p>Assess dependencies and risks</p>
+                            <p>Prioritize Applications</p>
+                          </div> 
                     </div>
                     <div class="desktop-view-content machineLearningContent">
                         <div class="mobile-collapse-content">
-                            <h3 class="mobile-collapse-contenting">Decision</h3><span class="iconArrow icon-Close"></span>
+                            <h3 class="mobile-collapse-contenting">Decision</h3><span class="iconArrow icon-Close" data-toggle="collapse" data-target="#decisionCollapse"></span>
+                        </div>
+                        <div id="decisionCollapse" class="collapse">
+                            <div>
+                                <p>Choose a cloud deployment model and provider</p>
+                                <p>Private vs Public vs Hybrid</p>
+                                <p>Single vs Multi-cloud</p>
+                            </div>
+                            <div>
+                                <p>Determine the migration path</p>
+                                <p>Rehost (Lift and shift using migration tools)</p>
+                                <p>Refactor (Lift, tinker, and migrate using containers)</p>
+                                <p>Replace (Set up SaaS version)</p>
+                                <p>Rebuild (Redesign and build from scratch)</p>
+                                <p>Retain (Take no action)</p>
+                            </div>
                         </div>
                     </div>
                     <div class="desktop-view-content machineLearningContent">
                         <div class="mobile-collapse-content">
-                            <h3 class="mobile-collapse-contenting">Transition</h3><span class="iconArrow icon-Close"></span>
+                            <h3 class="mobile-collapse-contenting">Transition</h3><span class="iconArrow icon-Close" data-toggle="collapse" data-target="#transitionCollapse"></span>
+                        </div>
+                        <div id="transitionCollapse" class="collapse">
+                            <p>Migrate as small workloads</p>
+                            <p>Test and deploy</p>
+                            <p>Monitor log and performance</p>
+                            <p>Assimilate learnings and apply to next migration</p>
                         </div>
                     </div>
                     <div class="desktop-view-content machineLearningContent">
                         <div class="mobile-collapse-content">
-                            <h3 class="mobile-collapse-contenting">Cloud</h3><span class="iconArrow icon-Close"></span>
+                            <h3 class="mobile-collapse-contenting">Cloud</h3><span class="iconArrow icon-Close" data-toggle="collapse" data-target="#cloudCollapse"></span>
                         </div>
-                    </div>
+                        <div id="cloudCollapse" class="collapse">
+                            <p>Operate the cloud environment with continuous monitoring (24/7 support).</p>
+                            <p>Make periodic enhancements to take advantage of new functionalities introduced by the cloud provider.</p>
+                        </div>
+                        
                 </div>
             </section>
 
@@ -320,31 +354,57 @@
                 <div class="collapse-content machineLearningContentWrapper crossPLinks">
                     <div class="desktop-view-content machineLearningContent">
                         <div class="mobile-collapse-content">
-                            <h3 class="mobile-collapse-contenting">Cloud Readiness Assessment</h3><span class="iconArrow icon-Close collapse-icon" onclick="openStagesMobile(event, 'discoveryMobile')"></span>
+                            <h3 class="mobile-collapse-contenting">Cloud Readiness Assessment</h3><span class="iconArrow icon-Close collapse-icon" data-toggle="collapse" data-target="#cloud"></span>
+                        </div>
+                        <div id="cloud" class="collapse">
+                            <p>Prepare an inventory of the existing infrastructure</p>
+                            <p>Assess the dependencies and risks involved</p>
+                            <p>Identify the most suited cloud service provider</p>
+                            <p>Suggest suitable cloud tools to replace/improve the existing environment</p>
+                            <p>Plan and prepare final architecture diagram with DR and fault-tolerance options</p>
+                            <p>Estimate the time and cost involved</p>
                         </div>
                         
                     </div>
                     <div class="desktop-view-content machineLearningContent">
                         <div class="mobile-collapse-content">
-                            <h3 class="mobile-collapse-contenting">Beta Environment Setup</h3><span class="iconArrow icon-Close collapse-icon" onclick="openStagesMobile(event, 'decisionMobile')"></span>
+                            <h3 class="mobile-collapse-contenting">Beta Environment Setup</h3><span class="iconArrow icon-Close collapse-icon" data-toggle="collapse" data-target="#beta"></span>
+                        </div>
+                        <div id="beta" class="collapse">
+                            <p>Set up a beta environment of the existing environment</p>
+                            <p>Test/fine-tune application using test data and test database</p>
+                            <p>Test scalability after loading production equivalent test data</p>
                         </div>
                         
                     </div>
                     <div class="desktop-view-content machineLearningContent">
                         <div class="mobile-collapse-content">
-                            <h3 class="mobile-collapse-contenting">Migration Strategy</h3><span class="iconArrow icon-Close collapse-icon"></span>
+                            <h3 class="mobile-collapse-contenting">Migration Strategy</h3><span class="iconArrow icon-Close collapse-icon" data-toggle="collapse" data-target="#migrationStrategyCollapse"></span>
+                        </div>
+                        <div id="migrationStrategyCollapse" class="collapse">
+                            <p>Plan phased migration of the application and database</p>
+                            <p>Estimate the required migration time and notify downtime if necessary</p>
                         </div>
                        
                     </div>
                     <div class="desktop-view-content machineLearningContent">
                         <div class="mobile-collapse-content">
-                            <h3 class="mobile-collapse-contenting">Migration</h3><span class="iconArrow icon-Close collapse-icon"></span>
+                            <h3 class="mobile-collapse-contenting">Migration</h3><span class="iconArrow icon-Close collapse-icon" data-toggle="collapse" data-target="#migrationCollapse"></span>
+                        </div>
+                        <div id="migrationCollapse" class="collapse">
+                            <p>Build a new automated/non-automated production environment</p>
+                            <p>Move production data and set up storage, DR, and fault tolerance</p>
+                            <p>Update DNS records and other configurations</p>
                         </div>
                         
                     </div>
                     <div class="desktop-view-content machineLearningContent">
                         <div class="mobile-collapse-content">
-                            <h3 class="mobile-collapse-contenting">Continuous Monitoring</h3><span class="iconArrow icon-Close collapse-icon"></span>
+                            <h3 class="mobile-collapse-contenting">Continuous Monitoring</h3><span class="iconArrow icon-Close collapse-icon" data-toggle="collapse" data-target="#monitoringCollapse"></span>
+                        </div>
+                        <div id="monitoringCollapse" class="collapse">
+                            <p>Set up monitoring tools</p>
+                            <p>Keep watching logs, performance, response time, and load</p>
                         </div>
                         
                     </div>
