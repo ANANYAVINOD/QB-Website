@@ -38,26 +38,4 @@ function openSteps(evt, cloudMigration) {
     evt.currentTarget.className += " active";
 }
 
-function openStagesMobile(evt, cloudMigrationStrategies) {
-    let i, stagesContents, xtraP;
-    stagesContents = document.getElementsByClassName("stagesContents");
-    xtraP = document.getElementsByClassName("xtraP");
-    for (i = 0; i < stagesContents.length; i++) {
-        stagesContents[i].style.opacity = "0";
-        stagesContents[i].style.height = "0";
-        stagesContents[i].style.bottom = "-40px";
-        stagesContents[i].style.padding = "0";
-    }
-    
-    stagesNumberedContent = document.getElementsByClassName("stagesNumberedContent");
-    for (i = 0; i < stagesNumberedContent.length; i++) {
-        stagesNumberedContent[i].className = stagesNumberedContent[i].className.replace(" active", "");
-        xtraP[i].className = xtraP[i].className.replace(" active", "");
-    }
-    document.getElementById(cloudMigrationStrategies).style.opacity = "1";
-    document.getElementById(cloudMigrationStrategies).style.height = "auto";
-    document.getElementById(cloudMigrationStrategies).style.bottom = "0";
-    document.getElementById(cloudMigrationStrategies).style.padding = "15px 0 0 0";
-    evt.currentTarget.className += " active";
-}
 

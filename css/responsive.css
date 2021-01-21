@@ -12,6 +12,9 @@
     }
 }
 @media (max-width: 768px) {
+    .navigation {
+        padding-right: 15px;
+    }
     .sectionWrapper {
         width: 88%;
     }

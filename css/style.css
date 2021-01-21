@@ -59,7 +59,8 @@
     padding-left:3px;
 }
 .buttonText:after {
-    content: '»';
+    content: '\f061';
+    font-family: "FontAwesome";
     position: absolute;
     opacity: 0;  
     top: 5px;
