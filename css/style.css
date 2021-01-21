@@ -31,6 +31,10 @@
     font-family: 'Nunito',sans-serif;
     font-size: 15px;
     padding-left: 20px;
+    color: #262626;
+}
+.menuItems a:hover {
+    color: #262626;;
 }
 .menuItems .menuDropDownArrow::after {
     content: "\f107";
@@ -62,9 +66,13 @@
     font-family: 'Nunito',sans-serif;
     font-size: 14px;
 }
+.buttonInner:hover {
+    color: #da3a36;
+}
 .buttonText:hover{
     padding-right: 5px;
     padding-left:3px;
+    color: #da3a36;
 }
 .buttonText:after {
     content: '\f061';
@@ -729,7 +737,7 @@
     background-color: #ffffff;
     position: relative;
     top: -30px;
-    height: 150px;
+    height: 170px;
 }
 .footerContent p {
     font-size: 20px;
@@ -738,10 +746,6 @@
 .footerContent .buttonInner {
     max-width: 150px;
     font-size: 15px;
-    padding: 10px 20px;
-}
-.footerContent .buttonText:after {
-    top: 10px;
 }
 .footerContentWrap {
     display: flex;
@@ -760,9 +764,6 @@
     text-align: left;
     padding: 3px;
     max-width: 150px;
-}
-.footerAddress .buttonText:after {
-    top: 2px;
 }
 .footerAddress p {
     font-size: 14px;
