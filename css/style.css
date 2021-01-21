@@ -27,6 +27,18 @@
     vertical-align: middle;
     margin-left: 50px;
 }
+.menuItems a {
+    font-family: 'Nunito',sans-serif;
+    font-size: 15px;
+    padding-left: 20px;
+}
+.menuItems .menuDropDownArrow::after {
+    content: "\f107";
+    font-family: "FontAwesome";
+    padding: 5px;
+    position: relative;
+    vertical-align: bottom;
+}
 .inquiryButton {
     padding: 0;
 }
@@ -45,9 +57,6 @@
     text-align: center;
     position: relative;
     overflow: hidden;
-    -moz-transition: color .1s cubic-bezier(0.16,0.08,0.355,1),background .1s cubic-bezier(0.16,0.08,0.355,1);
-    -ms-transition: color .1s cubic-bezier(0.16,0.08,0.355,1),background .1s cubic-bezier(0.16,0.08,0.355,1);
-    -o-transition: color .1s cubic-bezier(0.16,0.08,0.355,1),background .1s cubic-bezier(0.16,0.08,0.355,1);
     box-sizing: border-box;
     width: 100%;
     font-family: 'Nunito',sans-serif;
