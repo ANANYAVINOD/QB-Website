@@ -335,8 +335,11 @@
 }
 .pageUrlLink {
     color: #da3a36;
-    text-decoration: underline;
+    text-decoration: underline !important;
     font-weight: bold;
+}
+.pageUrlLink:hover {
+    color:#da3a36 ;
 }
 .migrationsStagesWrapper {
     background-image: url("/images/migrationStageBg.png");
@@ -778,7 +781,7 @@
 }
 .footerIcons a {
     font-family: 'FontAwesome';
-    padding: 3%;
+    padding: 2%;
     display: inline-block;
     font-size: 12px;
     color: #F9E0E0;
@@ -788,6 +791,9 @@
     background-color: #262626;
     margin-right: 15px;
     margin-top: 10px;
+}
+.footerIcons a:hover {
+    color: #F9E0E0;
 }
 .facebook::after {
     content: "\f09a";
