@@ -62,7 +62,6 @@
     font-family: 'Nunito',sans-serif;
     font-size: 14px;
 }
-
 .buttonText:hover{
     padding-right: 5px;
     padding-left:3px;
@@ -80,7 +79,6 @@
     opacity: 1;
     right: 10px;
 }
-  
 .buttonText {
     display: block;
     left: 100%;
@@ -313,7 +311,8 @@
     vertical-align: middle;
 }
 
-.sectionWrapper.split-section figure, .cloudStrategyContentFirst .split-section figure, .docker .serverlessEconomic>div:first-child img {
+.sectionWrapper.split-section figure, 
+.cloudStrategyContentFirst .split-section figure {
     text-align: center;
     padding-bottom: 20px;
 }
@@ -448,9 +447,6 @@
     width: 70%;
     margin: 0 auto;
     animation: fadein 1s;
-    -moz-animation: fadein 1s;
-    -webkit-animation: fadein 1s;
-    -o-animation: fadein 1s;
     transition: 1s bottom ease;
     position: relative;
     height: auto;
@@ -555,10 +551,6 @@
 }
 .cloudMigartionStepContent .listText.listTextCommon {
     width: 95%;
-}
-.strategy .listText {
-    padding-top: 30px;
-    padding-bottom: 0;
 }
 .cloudStrategyContainer .listText li {
     padding-bottom: 10px;

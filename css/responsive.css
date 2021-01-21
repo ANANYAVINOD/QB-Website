@@ -27,6 +27,9 @@
     .sectionOuterWrapper {
         width: 100%;
     }
+    .innerSubHeading {
+        margin-top: 40px;
+    }
     .split-section .leftside-data {
         padding-right: 0;
         padding-bottom: 20px;
@@ -63,7 +66,10 @@
         display: none;
     }
     .strategy .listText {
-        padding-bottom: 10px;
+        padding: 5px 0 10px 10px;
+    }
+    .strategy .listText li::marker {
+        color:  #da3a36;
     }
     .awsDropdown {
         display: block;
@@ -75,30 +81,21 @@
     .collapse-content {
         width: 100%;
         margin: 0 auto;
-    }
-    .decidingMobilewrapper .collapse-content, .compareStrategies .collapse-content, .cloudMigrationServiceWrapper div {
         margin-top: 20px;
     }
-    .desktop-view-content, #collapsable-wrapper .desktop-view-content, .collapsable-container.collapseWrapper .desktop-view-content {
+    .desktop-view-content {
+        border-bottom: 1px solid #ebebeb;
         width: 100%;
         padding: 0 !important;
         position: relative;
         z-index: 1;
     }
-    .desktop-view-content {
-        border-bottom: 1px solid #ebebeb;
-    }
-    .machineLearningContent .mobile-collapse-content {
+    .mobile-collapse-content {
         display: table;
         align-items: center;
         width: 100%;
-    }
-    .mobile-collapse-content {
-        font-size: 28px;
         padding: 20px 0;
         cursor: pointer;
-        display: flex;
-        align-items: center;
     }
     .awsDropdown .desktop-view-content h3 {
         display: table-cell;
@@ -106,8 +103,6 @@
         text-align: left;
         width: 90%;
         padding: 0;
-    }
-    .mobile-collapse-content .mobile-collapse-contenting {
         font-size: 24px;
     }
     .awsDropdown .desktop-view-content .iconArrow {
@@ -172,7 +167,7 @@
     .resourceMainWrapper .xtraContent {
         display: inline;
         position: relative;
-        top: 100px;
+        top: 60px;
         border: 1px solid #fff;
         border-radius: 4px;
         padding: 10px;
