@@ -122,6 +122,10 @@
     margin-top: -10px;
     cursor: pointer;
 }
+.searchWrap,
+.navMenu {
+    margin-bottom: 14px;
+}
 #breadcrumb {
     width: 100%;
     font-family: 'Nunito',sans-serif;
@@ -168,8 +172,11 @@
     width: 91%;
     margin: 0 auto;
 }
-.cloudMonitoringStrategyWrapper {
+.cloudMonitoringStrategyWrapper{
     background-image: url("/images/cloudMigrationBackground.png");
+}
+.cloudMigrationStrategyContainer {
+    background-image: url("/images/migrationStepsBG.jpg");
 }
 .strategy {
     background-size: cover;
@@ -500,7 +507,7 @@
 }
 .cloudMigrationSteps .split-section>div:first-child {
     display: table-cell;
-    width: 70px;
+    width: 90px;
 }
 .cloudMigrationSteps .split-section>div:first-child figure:hover, .cloudMigrationSteps .split-section>div:first-child figure.active {
     margin-left: -10px !important;
